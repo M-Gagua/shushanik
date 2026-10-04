@@ -1,0 +1,579 @@
+body {
+    background-color: #1b1109;
+    color: #cec3b1;
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    border-bottom: 1px solid #4a423b;
+    padding: 1px 0;
+}
+
+.navbar-brand {
+    color: #eee7dc !important;
+    font-size: 20px;
+}
+
+.nav-link {
+    color: #aaa29a !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #eee7dc !important;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 24px;
+    color: #aaa29a;
+}
+
+
+/* CHOICE BUTTONS */
+
+.choice-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.choice-buttons .btn {
+    min-width: 180px;
+    padding: 18px 25px;
+}
+
+/* TITLE PAGE */
+
+.title-page {
+    padding-top: 160px;
+}
+
+.opening-label {
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8f8880;
+    margin-bottom: 30px;
+}
+
+.title-page h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.title-page .lead {
+    font-size: 25px;
+    color: #aaa29a;
+    margin-bottom: 50px;
+}
+
+.start-button {
+    padding: 15px 45px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.start-button:hover {
+    transform: translateY(-3px);
+}
+
+
+
+/* INTRODUCTION PAGE */
+
+.introduction-page {
+    max-width: 850px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.introduction-page h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.introduction-text {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #c5beb5;
+}
+
+.introduction-text p {
+    margin-bottom: 30px;
+}
+
+.introduction-question {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding: 35px;
+    border-top: 1px solid #4a423b;
+    border-bottom: 1px solid #4a423b;
+}
+
+.introduction-question p {
+    color: #8f8880;
+    letter-spacing: 2px;
+}
+
+.introduction-question h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+
+/* CHOICE PAGE */
+
+.choice-page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.choice-page h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.choice-page .lead {
+    margin-bottom: 50px;
+    color: #aaa29a;
+}
+
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.choice-card {
+    min-height: 150px;
+    background: transparent;
+    border: 1px solid #5a5149;
+    color: #eee7dc;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.choice-card:hover {
+    background-color: #292321;
+    border-color: #eee7dc;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.choice-card:nth-child(4) {
+    grid-column: 2 / 2;
+}
+
+
+
+
+
+
+
+
+/* =========================
+   SHUSHANIK VALUES SCALE
+   ========================= */
+
+.scale-page {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.scale-page h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.scale-description {
+    color: #aaa29a;
+    font-size: 19px;
+    max-width: 650px;
+    margin: 0 auto 45px;
+    line-height: 1.7;
+}
+
+
+/* VALUE CUBES */
+
+.value-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.value-cube {
+    width: 125px;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #292321;
+    border: 1px solid #6b6158;
+
+    color: #eee7dc;
+    font-family: Georgia, serif;
+    font-size: 17px;
+
+    cursor: grab;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.value-cube:hover {
+    transform: translateY(-5px);
+    background-color: #332d29;
+    border-color: #eee7dc;
+}
+
+.value-cube:active {
+    cursor: grabbing;
+}
+
+
+/* SCALE */
+
+.scale-wrapper {
+    width: 700px;
+    height: 430px;
+    margin: 70px auto 0;
+}
+
+.balance-scale {
+    position: relative;
+    width: 700px;
+    height: 430px;
+}
+
+
+/* THE BEAM */
+
+.scale-beam {
+    position: absolute;
+
+    top: 100px;
+    left: 50%;
+
+    width: 560px;
+    height: 10px;
+
+    background-color: #eee7dc;
+
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: center;
+
+    transition: transform 0.7s ease;
+}
+
+
+/* PANS */
+
+.scale-pan {
+    position: absolute;
+
+    top: 10px;
+
+    width: 180px;
+    min-height: 100px;
+
+    border: 2px solid #8f8880;
+    border-top: none;
+
+    border-radius: 0 0 90px 90px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    padding-bottom: 15px;
+
+    color: #aaa29a;
+
+    transition:
+        background-color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* LEFT PAN */
+
+.left-pan {
+    left: -50px;
+}
+
+
+/* RIGHT PAN */
+
+.right-pan {
+    right: -50px;
+}
+
+
+/* WHEN A PAN IS READY TO RECEIVE A CUBE */
+
+.scale-pan.drag-over {
+    background-color: #292321;
+    border-color: #eee7dc;
+}
+
+
+/* THE CENTRAL STAND */
+
+.scale-stand {
+    position: absolute;
+
+    top: 108px;
+    left: 50%;
+
+    width: 8px;
+    height: 230px;
+
+    background-color: #8f8880;
+
+    transform: translateX(-50%);
+}
+
+
+/* TRIANGLE / BASE */
+
+.scale-stand::before {
+    content: "";
+
+    position: absolute;
+
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 25px solid #8f8880;
+}
+
+
+.scale-stand::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    width: 190px;
+    height: 8px;
+
+    background-color: #8f8880;
+
+    transform: translateX(-50%);
+}
+
+
+/* CUBES INSIDE THE SCALE */
+
+.scale-pan .value-cube {
+    width: 105px;
+    height: 65px;
+
+    margin: 5px;
+
+    font-size: 15px;
+
+    background-color: #171414;
+
+    cursor: grab;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .scale-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .balance-scale {
+        transform: scale(0.8);
+        transform-origin: top center;
+    }
+
+    .scale-page h1 {
+        font-size: 34px;
+    }
+}
+
+.value-area.drag-over {
+    border: 1px dashed #8f8880;
+    padding: 15px;
+}
+
+.value-area {
+    min-height: 100px;
+    border: 1px dashed transparent;
+    transition: 0.3s;
+}
+
+
+/* =========================
+   CHARACTERS PAGE
+   ========================= */
+
+.characters-page {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.characters-page > h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.characters-intro {
+    color: #aaa29a;
+    font-size: 19px;
+    max-width: 650px;
+    line-height: 1.7;
+    margin-bottom: 80px;
+}
+
+
+/* CHARACTER CARD */
+
+.character-card {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    max-width: 1050px;
+    margin: 0 auto 90px;
+
+    padding-bottom: 80px;
+
+    border-bottom: 1px solid #3f3934;
+}
+
+
+/* ALTERNATE THE IMAGE AND TEXT */
+
+.character-card.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* IMAGE */
+
+.character-image {
+    flex: 0 0 330px;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #292321;
+    border: 1px solid #5a5149;
+
+    color: #8f8880;
+    font-size: 16px;
+}
+
+
+/* TEXT */
+
+.character-info {
+    flex: 1;
+}
+
+.character-role {
+    color: #8f8880;
+
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+.character-info h2 {
+    font-size: 38px;
+    margin: 0 0 25px;
+}
+
+.character-info p:not(.character-role) {
+    color: #c5beb5;
+
+    font-size: 18px;
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .character-card,
+    .character-card.reverse {
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .character-image {
+        width: 100%;
+        height: 350px;
+    }
+
+    .characters-page > h1 {
+        font-size: 38px;
+    }
+}
+
+.character-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

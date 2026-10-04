@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>მიმოხილვა - შუშანიკის წამება</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="/">
+                შუშანიკის წამება
+            </a>
+
+            <div class="navbar-nav ms-auto">
+
+                <a class="nav-link" href="/">
+                    დასაწყისი
+                </a>
+
+                <a class="nav-link active" href="/introduction">
+                    მიმოხილვა
+                </a>
+
+                <a class="nav-link" href="/choice">
+                    არჩევანი
+                </a>
+
+                <a class="nav-link" href="/characters">
+                    პერსონაჟები
+                </a>
+
+                <a class="nav-link" href="/scale">
+                    სასწორი
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- INTRODUCTION -->
+
+    <main class="container introduction-page">
+
+        <p class="opening-label">
+            V საუკუნე · ქართლი
+        </p>
+
+        <h1>სანამ არჩევანს გააკეთებთ...</h1>
+
+        <div class="introduction-text">
+
+            <p>
+                შუშანიკს ყველაფერი წართმეული ჰქონდა, თუმცა, მან შეინარჩუნა
+                და შეეწირა თავისთვის ყველაზე ძვირფას რაღაცას, თავის რწმენას. 
+            </p>
+
+            <p>
+                იაკობ ხუცესი მოგვითხრობს, თუ როგორ აღმოჩნდება შუშანიკი
+                ძალაუფლების, ოჯახურ კონფლიქტისა და რწმენის არჩევნის შორის.
+                მისი თითოეული არჩევანი ეწინააღმდეგება თავისი მაზდიანობის 
+                მიმდევარ ქმარს, ვარსქენს და ეს მის ცხოვრებას აუბედურებს.
+                ამ არჩევნებს შუშანიკი თავისი რწმენისთვის სიკვდილამდე მიჰყავს.
+            </p>
+
+        </div>
+
+        <div class="introduction-question">
+
+            <p>
+                მთავარი კითხვა:
+            </p>
+
+            <h2>
+                როცა ყველაფრის შენარჩუნება შეუძლებელია
+                და შეგიძლია მხოლოდ ერთი რაღაცის დატოვება,
+                რას დაიტოვებ?
+            </h2>
+
+        </div>
+
+        <a href="/choice" class="btn btn-outline-light btn-lg start-button">
+            არჩევანის გაკეთება
+        </a>
+
+    </main>
+
+</body>
+</html>

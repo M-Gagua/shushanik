@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>შედეგი — შუშანიკის წამება</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand" href="/">
+                შუშანიკის არჩევანი
+            </a>
+
+            <div class="navbar-nav ms-auto">
+
+                <a class="nav-link" href="/">
+                    დასაწყისი
+                </a>
+
+                <a class="nav-link" href="/introduction">
+                    მიმოხილვა
+                </a>
+
+                <a class="nav-link" href="/choice">
+                    არჩევანი
+                </a>
+
+                <a class="nav-link" href="/characters">
+                    პერსონაჟები
+                </a>
+
+                <a class="nav-link" href="/scale">
+                    სასწორი
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main class="container text-center results-page">
+
+        <p class="opening-label">
+            შენი შედეგი
+        </p>
+
+        <h1>
+            რამდენად ახლოს ხარ შუშანიკთან?
+        </h1>
+
+        <div class="result-number">
+            {{ percentage|int }}%
+        </div>
+
+        <p class="result-text">
+            შენი არჩევნების მიხედვით, შენ {{ percentage|int }}%-ით შუშანიკის ნაირი ხარ.
+        </p>
+        
+        <a href="/" class="btn btn-outline-light btn-lg start-button">
+            დაბრუნება
+        </a>
+
+    </main>
+            
+
+</body>
+</html>
