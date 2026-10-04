@@ -105,13 +105,12 @@ function updateScale() {
     const values = {
 
         faith: 100,
-        dignity: 8,
-        love: 6,
-        freedom: 5,
+        identity: 10,
+        dignity: 6,
+        wealth: 1,
+        freedom: 3,
         power: 1,
-        family: 4,
-        kindness: 3,
-        peace: 2
+        kindness: 7
 
     };
 
